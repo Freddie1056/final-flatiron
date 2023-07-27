@@ -22,40 +22,35 @@ To run the Flatiron Bank React app on your local machine, follow the steps below
 1. Clone the repository to your local machine:
 
 ```bash
-git clone git@github.com:Freddie1056/final-flatiron.git
+
+##git clone git@github.com:Freddie1056/final-flatiron.git
 cd flatiron-bank-react
 
-    Install the dependencies:
-
-bash
+##Install the dependencies:
 
 npm install
 
-Usage
+##Usage
 
     Start the JSON server to simulate the backend:
 
-bash
-
-npm run server
+##npm run server
 
     In a separate terminal, start the React app:
 
-bash
-
-npm start
+##npm start
 
     Open your web browser and visit http://localhost:3000 to access the Flatiron Bank app.
 
-Adding Transactions
+##Adding Transactions
 
     Use the "Add Transaction" form to enter a description and an amount, then click the "Add Transaction" button to add a new transaction.
 
-Filtering Transactions
+##Filtering Transactions
 
     Type into the search bar to filter transactions based on their descriptions. Only transactions containing the search term will be displayed.
 
-Project Structure
+##Project Structure
 
 The project is organized as follows:
 
@@ -82,6 +77,7 @@ src/: Contains the React application's source code.
 Contributing
 
 Contributions to the Flatiron Bank React app are welcome! If you find any bugs or have suggestions for improvements, please feel free to open an issue or submit a pull request.
-License
+
+##License
 
 This project is licensed under the MIT License.

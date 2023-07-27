@@ -1,71 +1,87 @@
-# Getting Started with Create React App
+# Flatiron Bank React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+Flatiron Bank is a simple React web application that allows users to manage transactions. The app fetches transaction data from a JSON server and displays it in a table. Users can add new transactions through a form and also filter transactions based on their descriptions.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- View a table of all transactions with ID, Description, and Amount columns.
+- Add new transactions using a simple form.
+- Filter transactions by typing into the search bar to see only the relevant results.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Getting Started
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+To run the Flatiron Bank React app on your local machine, follow the steps below:
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js and npm installed on your computer.
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository to your local machine:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+git clone git@github.com:Freddie1056/final-flatiron.git
+cd flatiron-bank-react
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    Install the dependencies:
 
-### `npm run eject`
+bash
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+npm install
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Usage
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    Start the JSON server to simulate the backend:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+bash
 
-## Learn More
+npm run server
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    In a separate terminal, start the React app:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+bash
 
-### Code Splitting
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    Open your web browser and visit http://localhost:3000 to access the Flatiron Bank app.
 
-### Analyzing the Bundle Size
+Adding Transactions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+    Use the "Add Transaction" form to enter a description and an amount, then click the "Add Transaction" button to add a new transaction.
 
-### Making a Progressive Web App
+Filtering Transactions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+    Type into the search bar to filter transactions based on their descriptions. Only transactions containing the search term will be displayed.
 
-### Advanced Configuration
+Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration).
+The project is organized as follows:
 
-### Deployment
+|-- public/
+|-- src/
+|   |-- Components/
+|   |   |-- TransactionTable.js
+|   |   |-- TransactionForm.js
+|   |   |-- SearchBar.js
+|   |-- App.js
+|   |-- index.js
+|-- package.json
+|-- db.json
+|-- README.md
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment).
+public/: Contains the public files, including the HTML template.
+src/: Contains the React application's source code.
+        Components/: Contains the components used in the app, such as the TransactionTable, TransactionForm, and SearchBar components.
+        App.js: The main component that renders the entire application.
+        index.js: The entry point of the application.
+    package.json: The package configuration file with project dependencies and scripts.
+    db.json: A JSON file that simulates the backend and contains the initial transaction data.
 
-### `npm run build` fails to minify
+Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify).
-# final-flatiron
+Contributions to the Flatiron Bank React app are welcome! If you find any bugs or have suggestions for improvements, please feel free to open an issue or submit a pull request.
+License
+
+This project is licensed under the MIT License.

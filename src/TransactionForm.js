@@ -42,5 +42,29 @@ const TransactionForm = ({ addTransaction, transactions }) => {
     </div>
   );
 };
+const styles = {
+  container: {
+    marginBottom: '20px',
+    padding: '10px',
+    border: '1px solid #ccc',
+    borderRadius: '5px',
+  },
+  input: {
+    display: 'block',
+    width: '100%',
+    padding: '8px',
+    marginBottom: '10px',
+    borderRadius: '5px',
+    border: '1px solid #ccc',
+  },
+  button: {
+    backgroundColor: '#4CAF50',
+    color: 'white',
+    padding: '10px 15px',
+    border: 'none',
+    borderRadius: '5px',
+    cursor: 'pointer',
+  },
+};
 
 export default TransactionForm;

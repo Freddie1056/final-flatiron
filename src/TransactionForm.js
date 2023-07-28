@@ -1,70 +1,48 @@
 import React, { useState } from 'react';
 
-const TransactionForm = ({ addTransaction, transactions }) => {
+const TransactionForm = ({ addTransaction }) => {
   const [description, setDescription] = useState('');
   const [amount, setAmount] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Generate a unique ID for the new transaction (You can use a library like 'uuid' for this)
+    // Create a new transaction object with description and amount
     const newTransaction = {
-      id: transactions.length + 1,
       description,
-      amount: +amount,
+      amount: Number(amount),
     };
     addTransaction(newTransaction);
+    // Reset the form after submitting
     setDescription('');
     setAmount('');
   };
 
   return (
     <div>
-      <h2>Add Transaction</h2>
+      <h2>Add New Transaction</h2>
       <form onSubmit={handleSubmit}>
-        <label>
-          Description:
+        <div>
+          <label>Description:</label>
           <input
             type="text"
             value={description}
             onChange={(e) => setDescription(e.target.value)}
+            required
           />
-        </label>
-        <label>
-          Amount:
+        </div>
+        <div>
+          <label>Amount:</label>
           <input
             type="number"
             value={amount}
             onChange={(e) => setAmount(e.target.value)}
+            required
           />
-        </label>
+        </div>
         <button type="submit">Add Transaction</button>
       </form>
     </div>
   );
-};
-const styles = {
-  container: {
-    marginBottom: '20px',
-    padding: '10px',
-    border: '1px solid #ccc',
-    borderRadius: '5px',
-  },
-  input: {
-    display: 'block',
-    width: '100%',
-    padding: '8px',
-    marginBottom: '10px',
-    borderRadius: '5px',
-    border: '1px solid #ccc',
-  },
-  button: {
-    backgroundColor: '#4CAF50',
-    color: 'white',
-    padding: '10px 15px',
-    border: 'none',
-    borderRadius: '5px',
-    cursor: 'pointer',
-  },
 };
 
 export default TransactionForm;

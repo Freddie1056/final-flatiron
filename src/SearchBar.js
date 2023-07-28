@@ -4,9 +4,7 @@ const SearchBar = ({ handleSearch }) => {
   const [searchTerm, setSearchTerm] = useState('');
 
   const handleChange = (e) => {
-    const searchTerm = e.target.value;
-    setSearchTerm(searchTerm);
-    handleSearch(searchTerm); // Call the handleSearch prop with the searchTerm
+    setSearchTerm(e.target.value);
   };
 
   return (
@@ -18,6 +16,7 @@ const SearchBar = ({ handleSearch }) => {
         onChange={handleChange}
         placeholder="Search by description"
       />
+      <button onClick={() => handleSearch(searchTerm)}>Search</button>
     </div>
   );
 };

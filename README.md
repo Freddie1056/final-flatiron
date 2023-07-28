@@ -21,9 +21,14 @@ To run the Flatiron Bank React app on your local machine, follow the steps below
 
 1. Clone the repository to your local machine:
 
+<<<<<<< HEAD
 ```bash
 
 ##git clone git@github.com:Freddie1056/final-flatiron.git
+=======
+bash
+git clone git@github.com:Freddie1056/final-flatiron.git
+>>>>>>> 3504e7d (final)
 cd flatiron-bank-react
 
 ##Install the dependencies:

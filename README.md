@@ -1,3 +1,6 @@
+
+Deployed link:  https://dashing-pastelito-ca1a15.netlify.app/
+
 # Flatiron Bank React App
 
 
@@ -20,9 +23,6 @@ To run the Flatiron Bank React app on your local machine, follow the steps below
 ### Installation
 
 1. Clone the repository to your local machine:
-
-<<<<<<< HEAD
-```bash
 
 ##git clone git@github.com:Freddie1056/final-flatiron.git
 =======
